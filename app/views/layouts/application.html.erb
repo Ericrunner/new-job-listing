@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>JobListing</title>
+    <%= favicon_link_tag 'jobicon.ico'%>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +10,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <%= render 'common/navbar'%>
+      <%= render 'common/flashes'%>
+      <%= yield %>
+    </div>
+      <%= render 'common/footer'%>
   </body>
 </html>
