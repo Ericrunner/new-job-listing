@@ -1,8 +1,7 @@
 class JobsController < ApplicationController
 before_action :authenticate_user!, only: [:new,:edit,:create,:update,:destroy]
-before_action :require_is_admin,only: [:new,:edit,:create,:update,:destroy]
 def index
-  @jobs=Job.all
+  @jobs=Job.where(:is_hidden => false)
 end
 def new
   @job=Job.new
@@ -36,13 +35,15 @@ def destroy
   flash[:warning]="Job deleted!"
 end
 
-private
-def require_is_admin
-  if !current_user.admin?
-    flash[:alert]="You are not admin!"
-    redirect_to root_path
-  end
+def publish
+
 end
+
+def hide
+
+end
+private
+
 def job_params
   params.require(:job).permit(:title,:description)
 end
