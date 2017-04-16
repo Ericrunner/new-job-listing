@@ -30,7 +30,8 @@ end
 def destroy
   @job=Job.find(params[:id])
   @job.destroy
-  redirect_to jobs_path,flash[:warning]="Job deleted!"
+  redirect_to jobs_path
+  flash[:warning]="Job deleted!"
 end
 
 private
