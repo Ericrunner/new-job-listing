@@ -2,6 +2,7 @@
     <h2 class="text-center">编辑简历</h2>
     <%= simple_form_for [@job,@resume] do |f|%>
       <%= f.input :content,label:"个人简介",error:"不能为空！"%>
+      <%= f.file_field :attachment%>
       <%= f.submit '提交'%>
     <% end %>
 </div>

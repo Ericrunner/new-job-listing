@@ -9,6 +9,7 @@
         <th>职位名称</th>
         <th>职位要求</th>
         <th>发布时间</th>
+        <th>求职者数量</th>
         <th></th>
       </tr>
     </thead>
@@ -21,6 +22,7 @@
           </td>
           <td><%= job.description%></td>
           <td><%= job.created_at%></td>
+          <td><%= link_to(job.resumes.count,admin_job_resumes_path(job))%></td>
           <td>
              <%= link_to("Edit",edit_admin_job_path(job),class:"btn btn-default")%>
              <%= link_to("Delete",admin_job_path(job),method: :delete,class:"btn btn-default",data:{confirm:"Are you sure?"})%>
