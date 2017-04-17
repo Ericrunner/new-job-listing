@@ -3,7 +3,7 @@ class Job < ApplicationRecord
   validates :wage_upper_bound,presence: true
   validates :wage_down_bound,presence: true
   validates :wage_down_bound,numericality: {greater_than: 0}
-
+  has_many  :resumes
   def publish!
      self.is_hidden = false
      self.save
