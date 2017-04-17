@@ -1,7 +1,14 @@
 class JobsController < ApplicationController
 before_action :authenticate_user!, only: [:new,:edit,:create,:update,:destroy]
 def index
-  @jobs=Job.where(:is_hidden => false)
+  @jobs=case params[:order]
+       when "by_upper_bound"
+         Job.where(is_hidden:false).order("wage_upper_bound DESC")
+       when "by_lower_bound"
+         Job.where(is_hidden:false).order("wage_down_bound DESC")
+       else
+         Job.where(is_hidden:false).order("created_at DESC")
+       end
 end
 def new
   @job=Job.new
@@ -35,13 +42,6 @@ def destroy
   flash[:warning]="Job deleted!"
 end
 
-def publish
-
-end
-
-def hide
-
-end
 private
 
 def job_params
