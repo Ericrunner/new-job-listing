@@ -1,40 +1,140 @@
-  <div class="jumbotron">
-    <h1 class="title">51 Offer</h1>
-    <p class="slogan">51 Offer 是一个提供15K薪水工作机会的求职网站。
-    <br>
-    我们希望大家通过这个网站，找到并应征上高薪且优质的工作。
-    <br>
-     给自己的努力和天份一次机会，成为人生的 Winner。
-    </p>
-    <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">马上应征</a></p>
-  </div>
-  <section id="company">
-    <div class = "container-fluid">
-      <div class="row">
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
-            <div class="caption">
-              <h3>厦门高科技创业园</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
-            <div class="caption">
-              <h3>info@51offer.com</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
-            <div class="caption">
-              <h3>0592-12344321</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+  <article>
+   <!--正文中的头部，包括“首页，职业学院，会员课程”等  -->
+   <header>
+    <div class="container1">
+     <div>
+      <a id="link-shouye">首页</a>
+     </div>
+     <!-- 职业学院部分 -->
+     <div class="navcontent" id="school">
+      <span id="span1">前端开发</span>
+     </div>
+     <!-- 会员课程部分 -->
+     <div class="navcontent" id="course">
+      <span id="span2">后端开发</span>
+     </div>
+     <!-- 极客社区部分 -->
+     <div class="navcontent" id="community">
+      <span id="span3">全栈开发</span>
+     </div>
+     <div id="sousuo">
+      <img src="images/search-icon.png" />
+     </div>
     </div>
-  </section>
+   </header>
+   <div id="mainpage">
+    <!-- 正文的第一部分，包含会员登录等 -->
+    <section id="mainpagefirstsec">
+     <!-- 包含三个div -->
+     <!-- 包含三个div,第一个div -->
+     <div>
+       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+         <!-- Indicators -->
+         <ol class="carousel-indicators">
+           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+         </ol>
+
+         <!-- Wrapper for slides -->
+         <div class="carousel-inner" role="listbox">
+           <div class="item active">
+             <img src="images/pic1.jpg" alt="...">
+             <div class="carousel-caption">
+               机器无法取代的职业：程序员
+             </div>
+           </div>
+           <div class="item">
+             <img src="images/pic2.jpg" alt="...">
+             <div class="carousel-caption">
+               解决问题是程序员的核心价值。
+             </div>
+           </div>
+         </div>
+
+         <!-- Controls -->
+         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+         </a>
+         <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+         </a>
+         <!-- 包含三个div,第二个div 结束-->
+         <!-- 包含三个div,第三个div -->
+       </div>
+      <!-- 包含三个div,第一个div 结束 -->
+      <!-- 包含三个div,第二个div -->
+
+      <!-- 包含三个div,第三个div 结束-->
+     </div>
+    </section>
+    <!-- 正文第一部分 结束 -->
+    <!-- 正文的第二部分，包含PHP工程师就业班 -->
+    <section id="mainpagesecondsec">
+     <div>
+      <a href="" id="secondseclink1"><img src="images/java.png" /><p id="secondsecp1">Java工程师</p></a>
+      <a href="" id="secondseclink2"><img src="images/php.png" /><p id="secondsecp2">PHP工程师</p></a>
+      <a href="" id="secondseclink3"><img src="images/android.png" /><p id="secondsecp3">Android工程师</p></a>
+      <a href="" id="secondseclink4"><img src="images/html.png" /><p id="secondsecp4">Web大前端工程师</p></a>
+     </div>
+    </section>
+    <section id="mainpagesixthsec">
+     <div>
+      <p>学员故事</p>
+      <div>
+       <div>
+        <a href=""> <p> 爆炸力学硕士转安卓开发，回顾自己从爆炸力学走向代码世界的历程，感触良多。庆幸自己没有留在研究所，程序员不断学习不断进步的感觉更有意义。稳定绝不代表停滞，历练才是我们的财富。 </p>
+         <div>
+          <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-4-avatar.jpg" />
+          <p> 张少龙 </p>
+          <span> 入职 北京中航智科技 </span>
+         </div> </a>
+        <a href=""> <p> 美女程序媛，从运维转岗到前端开发工程师。工作上的变化只是一部分，遇到极客学院更重要的是让我知道了自己的潜力，不被未来的不确定性吓倒，相信有目标，肯努力就可以得到想要的生活。 </p>
+         <div>
+          <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-5-avatar.jpg" />
+          <p> 杨帆 </p>
+          <span> 入职 深圳IBM </span>
+         </div> </a>
+        <a href=""> <p> Web大前端工程师就业班五期 03 班学员，某 985 大学信息与计算科学 2016 届毕业生，2 个月完成 16 个任务，被同班同学称为「大神」。2016 年拿到毕业证书的同时也拿到了 15K 高薪的 offer。 </p>
+         <div>
+          <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-6-avatar.jpg" />
+          <p> 路昕宇 </p>
+          <span> 入职 浪弯融科科技公司 </span>
+         </div> </a>
+        <a href=""> <p> 从房地产营销策划转行前端工程师。努力并不是为了证明自己多厉害，只是对自己生活方式的一种选择，每个人都可以通过自己的努力，去决定自己生活的样子。 </p>
+         <div>
+          <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-1-avatar.jpg" />
+          <p> 朱华宇 </p>
+          <span> 入职 极客学院 </span>
+         </div> </a>
+        <a href=""> <p> 从浑浑噩噩的自动化专业学生，到大三暑假进入研究院实习。当时努力克服的那些困难，都成了现在自己的资本和财富。 </p>
+         <div>
+          <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-2-avatar.jpg" />
+          <p> 黄文俊 </p>
+          <span> 入职 深圳北斗技术应用研究院 </span>
+         </div> </a>
+        <a href=""> <p> 电力工程设计转前端，很感谢极客学院给了我理想的转行准备。以高密度锻炼的方式，逼迫自己尽快熟悉团队开发模式，顺利进入程序员的世界，接触到的新技术拓宽了我的眼界。 </p>
+         <div>
+          <img src="http://wirrorcdn.jikexueyuan.com/v6/index-a/student-3-avatar.jpg" />
+          <p> 王浩博 </p>
+          <span> 入职 北京中科软科技股份有限公司 </span>
+         </div> </a>
+       </div>
+      </div>
+      <div id="sixthsecsecdiv">
+       <i id="sixthsecfiri"></i>
+       <i id="sixthsecseci"></i>
+      </div>
+     </div>
+    </section>
+    <!--正文第六部分结束  -->
+    <!-- 正文结束 -->
+   </div>
+  </article>
+  <!-- 网站正文部分  结束-->
+  <!-- 网站脚注部分 -->
+  <div id="gotop">
+   <a href="" id="gotopfirlink"></a>
+  </div>
+  <!-- 网站脚注部分 结束 -->
