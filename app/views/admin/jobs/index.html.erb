@@ -30,7 +30,7 @@
                     <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-warning") %>
                  <% end %>
           </td>        <td><%= job.description%></td>
-          <td><%= job.created_at%></td>
+          <td><%= job.created_at.to_date%></td>
 
 
         </tr>

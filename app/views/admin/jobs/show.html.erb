@@ -2,5 +2,5 @@
    <h2>职位信息：<%= @job.title%></h2>
    <p>职位名称：<%= @job.title%></p>
    <p>职位要求：<%= @job.description%></p>
-   <p>发布时间：<%= @job.created_at%></p>
+   <p>发布时间：<%= @job.created_at.to_date%></p>
 </div>
