@@ -18,95 +18,12 @@
 @import 'bootstrap';
 @import "font-awesome";
 @import url(http://fonts.googleapis.com/css?family=Roboto);
-.jumbotron {
-  background-image: url(pic3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 110px;
-  h1{
-    text-align: left;
-    color: violet;
-    text-shadow: 0px 4px black;
-    padding: 50px 20px 0;
-  }
+/*设置所有的margin和padding为0*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana,"Lantinghei SC","Hiragino Sans GB","Microsoft Yahei",Helvetica,arial,\5b8b\4f53,sans-serif;
 }
-
-.title {
-  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-  max-width: 500px;//最大宽度
-  margin-top: 200px;//和顶部拉开距离
-  margin-bottom: 0;//这样就可以紧接息面的描述文字
-  border-top-right-radius: 3px;//右上角圆边
-  border-top-left-radius: 3px;//左上角圆边
-
-}
- .jumbotron p {
-     margin: 0;//上下左右margin为0
-     font-size: 26px;//字体大小
-     max-width: 500px;//最大宽度
-     background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-     padding: 20px;//上下左右padding为20px
-     text-align:left;//文字左对齐
-     color: #222;//字体颜色
-
-     border-bottom-right-radius: 3px;//右下角圆边
-     border-bottom-left-radius: 3px;//左下角圆边
- }
-
-  .btn-danger {
-      color: #fff;//字体颜色
-
-      background-color: #EF6C00;//背景颜色
-
-      border-color: #EF6C00;//边框颜色
-
-  }
-
-  .btn-danger:hover {
-      background-color: #E65100;//鼠标放置在btn上的背景颜色
-
-      border-color: #E65100;//鼠标放置在btn上的边框颜色
-
-  }
-.slogan {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: rgba(169, 73, 66, 0.96);
-  top: 12px;
-}
-
-.lead {
-  margin-bottom: 60px;
-  text-align: center;
-  color: white;
-}
-.caption {
-  margin: 30px;
-  text-align: center;
-  top: 20px;
-}
-
-.thumbnail {
-    border: 0 none;
-    box-shadow: none;
-    margin-top: 60px;
-}
-.custab{
-  border: 1px solid #ccc;
-
-  padding: 5px;
-  margin: 5% 0;
-  box-shadow: 3px 3px 2px #ccc;
-
-  transition: 0.5s;
-}
-
-.custab:hover{
-  box-shadow: 3px 3px 0px transparent;
-  transition: 0.5s;
-}
-
 .navbar-default {
   background-color: #212121;
   border-color: #212121;
@@ -181,7 +98,6 @@
    overflow: hidden;
    font-family: roboto;
  }
-
  .loginmodal-container h1 {
    text-align: center;
    font-size: 1.8em;
@@ -263,142 +179,31 @@
  .login-help{
    font-size: 12px;
  }
- /*设置所有的margin和padding为0*/
- * {
-     margin: 0;
-     padding: 0;
-     font-family: Verdana,"Lantinghei SC","Hiragino Sans GB","Microsoft Yahei",Helvetica,arial,\5b8b\4f53,sans-serif;
- }
-         /*结束*/
-         /*设置导航栏部分的中各个div的位置，文字对齐，背景图像等*/
- nav {
-     background-image: url(img/jbanner.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-     height: 80px;
-     width: 100%;
-     min-width: 1000px;
- }
 
- nav>#container0 {
-     width: 1000px;
-     margin: 0 auto;
- }
-
- #container0>.firstdiv,#container0>.samediv {
-     float: left;
-     width: 178px;
-     height: 49px;
-     font-size: 18px;
-     color: #1e5294;
-     background: url(http://e.jikexueyuan.com/headerandfooter/images/btn.png) no-repeat center;
-     margin-top: 18px;
-     background-position: -1px;
- }
-
- #container0>.firstdiv {
-     margin-left: 202px;
- }
-
- #container0>.samediv {
-     margin-left: 5px;
- }
-
- #container0>div>a {
-     width: 178px;
-     text-decoration: none;
-     float: left;
- }
-
- #container0>div>img {
-     float: left;
- }
-
- .link {
-     margin-left: -34px;
- }
-
- #container0>div>a>span {
-     margin-left: 30px;
-     line-height: 49px;
- }
-
- .link1 {
-     text-align: center;
-     line-height: 49px;
- }
-         /*结束*/
-         /*设置鼠标点击各个div模块或者在div模块上面是的特效*/
- #container0>div:hover {
-     background: url(http://e.jikexueyuan.com/headerandfooter/images/btn-hover.png) no-repeat center;
-     background-position: -1px;
- }
-
- #container0>div>a:focus {
-     color: #1e5294;
- }
-         /*结束*/
-         /*设置导航栏右上角的小叉号以及点击后的动画*/
- #container0>b {
-     width: 16px;
-     height: 16px;
-     background-color: #9395a4;
-     position: absolute;
-     margin-top: 3px;
-     margin-left: 55px;
-     cursor: pointer;
- }
-
- #container0>b::before {
-     width: 2px;
-     height: 16px;
-     background-color: #2c2d4e;
-     content: "";
-     position: absolute;
-     left: 7px;
-     transform: rotate(45deg);
- }
-
- #container0>b::after {
-     content: "";
-     height: 2px;
-     width: 16px;
-     background-color: #2c2d4e;
-     position: absolute;
-     top: 7px;
-     transform: rotate(45deg);
- }
-
- #container0>b:hover {
-     background-color: #eaeaed;
- }
-
- #container0>b {
-     transition: all .5s;
- }
-          /*使用js才能实现鼠标点击b元素后，导航栏整体消失的效果 -->
-         <!-- <script type="text/javascript">$('b').on('click',function(){$('nav').slideup();})</script>*/
-         /*结束*/
-         /*设置article中的header*/
-         /*设置header的宽度，高度等*/
- article>header {
+#carousle1{
+  left: -340px;
+  color: #B0BEC5;
+}
+#carousel2{
+  width: 10px;
+  top: 20px;
+  left: 800px;
+}
+article>header {
      height: 60px;
      background: #fff;
      border-bottom: 1px solid #ececec;
  }
-         /*header中的内容放置在一个容器中*/
  article>header>.container1 {
      width: 1000px;
      height: 60px;
      margin: 0 auto;
  }
-         /*容器中各个div的基本设置*/
  article>header>.container1>div {
      float: left;
      height: 60px;
      line-height: 60px;
  }
-         /*第一个div的设置*/
  article>header>.container1>div>a>img {
      width: 109px;
      height: 40px;
@@ -413,7 +218,6 @@
      font-size: 14px;
      margin-right: 50px;
  }
-         /*第三，四，五个div的设置*/
  article>header>.container1>.navcontent {
      position: relative;
      font-size: 14px;
@@ -427,297 +231,22 @@
  #community {
      margin-left: 50px;
  }
-         /*第三，四，五个div的设置  结束*/
-         /*设置第三个div鼠标悬停后出现的ul的基本设置*/
-         /*学习心得：对于鼠标悬停在div1后出现div2，注意事项：
-         1.div一定要包含div2；
-         2.当div2的宽度大于div1时，当div2出现后，会对与div1平级的div3的位置产生影响。
-            为了避免这种影响，应当将div2设置为display：absolute。与此同时，为了控制div2的位置，
-            要将div1设置为display；relative或者absolute（视情况而定，最好是relative） */
- #zhiyexueyuan {
-     display: none;
-     list-style-type: none;
-     width: 280px;
-     background-color: #fff;
-     font-size: 12px;
-     position: absolute;
-     top: 60px;
-     left: 0;
-     z-index: 1000;
-     border-top: 1px solid #ececec;
-     color: #666;
- }
-
- #school:hover #zhiyexueyuan {
-     display: block;
- }
-         /*设置第三个div鼠标悬停后出现的ul表格的基本设置 结束*/
-         /*设置ul表格内的各自li的基本设置*/
- #zhiyexueyuan>.xueyuan {
-     background-color: #fafafa;
-     height: 28px;
-     line-height: 28px;
-     font-weight: 300;
-     padding-left: 15px;
-     margin-top: 10px;
-     margin-bottom: 10px;
- }
-
- #zhiyexueyuan>.xueyuan1 {
-     height: 30px;
-     line-height: 30px;
- }
 
  #zhiyexueyuan>.xueyuan1>a:hover {
      color: rgb(53, 181, 88);
  }
-
+.carousel-caption{
+  position: absolute;
+  top:200px;
+  font-size: 40px;
+  color:#8BC34A;
+}
  #zhiyexueyuan>.xueyuan1>a {
      text-decoration: none;
      line-height: 30px;
      height: 30px;
      color: #666;
  }
-         /*设置ul表格内的各自li的基本设置 结束*/
-         /*设置ul表格中其中四个带有的图标*/
- #web-icon {
-     display: inline-block;
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png");
-     background-size: 64px 64px;
-     width: 14px;
-     height: 14px;
-     background-position: 115px -25px;
-     margin-left: 20px;
-     margin-right: 5px;
- }
-
- #python-icon {
-     display: inline-block;
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon3.png");
-     background-size: 16px 148px;
-     width: 14px;
-     height: 14px;
-     background-position: 0 0;
-     margin-left: 20px;
-     margin-right: 5px;
- }
-
- #go-icon {
-     display: inline-block;
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon3.png");
-     background-size: 16px 148px;
-     width: 14px;
-     height: 14px;
-     background-position: 0 -38px;
-     margin-left: 20px;
-     margin-right: 5px;
- }
-
- #ios-icon {
-     display: inline-block;
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon3.png");
-     background-size: 16px 148px;
-     width: 14px;
-     height: 14px;
-     background-position: 0 66px;
-     margin-left: 20px;
-     margin-right: 15px;
- }
-         /*设置ul表格中其中四个带有的图标 结束*/
-
-         /*设置鼠标悬停在“会员课程”后出现的ul表格*/
- #course>#huiyuankecheng {
-     display: none;
-     list-style-type: none;
-     width: 280px;
-     background-color: #fff;
-     font-size: 12px;
-     position: absolute;
-     top: 60px;
-     left: 0;
-     z-index: 1000;
-     border-top: 1px solid #ececec;
-     padding: 10px 0;
- }
-
- #course:hover #huiyuankecheng {
-     display: block;
- }
-
- #course>#huiyuankecheng>li {
-     height: 40px;
-     line-height: 40px;
- }
-
- #course>#huiyuankecheng>li:hover {
-     background-color: #fafafa;
- }
-
- #course>#huiyuankecheng>li>a {
-     text-decoration: none;
-     color: #666;
- }
-
- #course>#huiyuankecheng>li:hover .course-character {
-     color: rgb(53, 181, 88);
- }
-
- #course>#huiyuankecheng>li>a>span {
-     float: right;
-     color: #bbb;
-     margin-right: 15px;
- }
-         /*设置鼠标悬停在“会员课程”后出现的ul表格 结束*/
-         /*设置ul表格中七行每行的图标*/
- #course>#huiyuankecheng>li>a>#xiliekecheng {
-     display: inline-block;
-     width: 14px;
-     height: 14px;
-     margin-left: 20px;
-     margin-right: 10px;
-     background: url("http://e.jikexueyuan.com/headerandfooter/images/xlkc2.png") 0 0 no-repeat;
-     background-size: 12px 12px;
-     background-position: 0 2px;
- }
-
- #course>#huiyuankecheng>li>a>#kechengku {
-     display: inline-block;
-     width: 14px;
-     height: 14px;
-     margin-left: 20px;
-     margin-right: 10px;
-     background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png") 0 0 no-repeat;
-     background-size: 64px 64px;
-     background-position: 0px -11px;
- }
-
- #course>#huiyuankecheng>li>a>#zhiyelujingtu {
-     display: inline-block;
-     width: 14px;
-     height: 14px;
-     margin-left: 20px;
-     margin-right: 10px;
-     background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png") 0 0 no-repeat;
-     background-size: 64px 64px;
-     background-position: -45px 0px;
- }
-
- #course>#huiyuankecheng>li>a>#zhishitixitu {
-     display: inline-block;
-     width: 14px;
-     height: 14px;
-     margin-left: 20px;
-     margin-right: 10px;
-     background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png") 0 0 no-repeat;
-     background-size: 64px 64px;
-     background-position: -29px -12px;
- }
-
- #course>#huiyuankecheng>li>a>#kechengbiaoqian {
-     display: inline-block;
-     width: 14px;
-     height: 14px;
-     margin-left: 20px;
-     margin-right: 10px;
-     background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png") 0 0 no-repeat;
-     background-size: 64px 64px;
-     background-position: -13px -12px;
- }
-
- #course>#huiyuankecheng>li>a>#kechengku {
-     display: inline-block;
-     width: 14px;
-     height: 14px;
-     margin-left: 20px;
-     margin-right: 10px;
-     background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png") 0 0 no-repeat;
-     background-size: 64px 64px;
-     background-position: 0px 0px;
- }
-
- #course>#huiyuankecheng>li>a>#viphuiyuangoumai {
-     display: inline-block;
-     width: 14px;
-     height: 14px;
-     margin-left: 20px;
-     margin-right: 10px;
-     background: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png") 0 0 no-repeat;
-     background-size: 64px 64px;
-     background-position: -14px 0px;
- }
-          /*设置ul表格中七行每行的图标 结束*/
- #community>#jikeshequ {
-     display: none;
-     list-style-type: none;
-     width: 280px;
-     background-color: #fff;
-     font-size: 12px;
-     position: absolute;
-     left: 0;
-     z-index: 1000;
-     padding: 10px 0;
-     border-top: 1px solid #ececec;
- }
-
- #community>#jikeshequ>li {
-     height: 40px;
-     line-height: 40px;
- }
-
- #community>#jikeshequ>li>a {
-     text-decoration: none;
- }
-
- #community>#jikeshequ>li:hover {
-     background-color: #fafafa;
- }
-
- #community>#jikeshequ>li:hover .commu-character {
-     color: rgb(53,181,88);
- }
-
- #community:hover #jikeshequ {
-     display: block;
- }
-
- #community>#jikeshequ>li>a>i {
-     display: inline-block;
-     width: 14px;
-     height: 14px;
-     margin: 0 10px 0 20px;
- }
-
- #community>#jikeshequ>li>a>#ques {
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png");
-     background-size: 64px 64px;
-     background-position: 2px -24px;
- }
-
- #community>#jikeshequ>li>a>#wiki {
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png");
-     background-size: 64px 64px;
-     background-position: -27px -24px;
- }
-
- #community>#jikeshequ>li>a>#asso {
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png");
-     background-size: 64px 64px;
-     background-position: 0 2px;
- }
-
- #community>#jikeshequ>li>a>#source {
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon.png");
-     background-size: 64px 64px;
-     background-position: -27px 2px;
- }
-
- #community>#jikeshequ>li>a>span {
-     float: right;
-     color: #bbb;
-     margin-right: 15px;
- }
-
-         /*第三，四，五个div中的特殊符号的动画效果*/
  article>header>.container1>.navcontent>div {
      display: inline-block;
      margin-left: 5px;
@@ -744,164 +273,18 @@
      animation-duration: 1s;
      transform: rotate(270deg);
  }
-
- @-webkit-keyframes rotate {
-     0% {
-         transform: rotate(90deg);
-     }
-
-     20% {
-         transform: rotate(180deg);
-     }
-
-     40% {
-         transform: rotate(270deg);
-     }
-
-     60% {
-         transform: rotate(360deg);
-     }
-
-     80% {
-         transform: rotate(540deg);
-     }
-
-     100% {
-         transform: rotate(630deg);
-     }
- }
-         /*设置搜索，登录，APP下载等图标的位置等基本内容*/
  article>header>.container1>div>img {
      width: 17px;
      height: 17px;
      cursor: pointer;
  }
-
- #zhucedenglu {
-     float: right;
-     margin-right: 10px;
-     margin-left: 25px;
-     position: relative;
- }
-
- #zhucedenglu>ul {
-     display: none;
-     position: absolute;
-     list-style-type: none;
-     width: 120px;
-     right: -35px;
-     font-size: 12px;
-     padding: 10px 0px 10px 0;
-     border-top: 1px solid #ececec;
-     z-index: 1200;
-     background-color: #ffffff;
- }
-
- #zhucedenglu>ul>li {
-     height: 35px;
-     line-height: 35px;
- }
-
- #zhucedenglu>ul>li>a {
-     text-decoration: none;
-     color: #666;
- }
-
- #zhucedenglu>ul>li>a>i {
-     display: inline-block;
-     background-image: url("http://e.jikexueyuan.com/headerandfooter/images/allicon2.png");
-     background-size: 64px 64px;
-     width: 12px;
-     height: 12px;
-     margin: 0 10px 0 20px;
- }
-
- #zhucedenglu:hover #registerul {
-     display: block;
- }
-
- #zhucedenglu>ul>li:hover {
-     background-color: #fafafa;
- }
-
- #zhucedenglu>ul>li:hover .registerlink {
-     color: rgb(53,181,88);
-     cursor: pointer;
- }
-
- #zhucedenglu>ul>#register>a:hover {
-     color: rgb(53,181,88);
- }
-
- #shugang {
-     display: inline-block;
-     height: 13px;
-     width: 2px;
-     background-color: #666;
-     margin-left: 13px;
-     margin-right: 13px;
- }
-
- #zhucedenglu>ul>#register {
-     padding-left: 25px;
- }
-
- #learingcenter {
-     background-position: -16px -15px;
- }
-
- #personalpage {
-     background-position: 19px 0;
- }
-
- #info {
-     background-position: -15px -29px;
- }
-
- #account {
-     background-position: 33px 0;
- }
-
- #appxiazai:hover #erweima {
-     display: block;
-     cursor: pointer;
- }
-
- #appxiazai>div {
-     width: 120px;
-     position: absolute;
-     display: none;
-     border-top: 1px solid #ececec;
-     margin-left: -50px;
-     z-index: 1200;
- }
-
- #appxiazai>div>img {
-     width: 120px;
-     background-color: #fff;
- }
-
- #appxiazai {
-     float: right;
-     margin-left: 25px;
-     position: relative;
- }
-
  #sousuo {
      float: right;
  }
-
-         /*article中的header部分结束*/
-         /*整个网站的主体部分，包含多个section*/
-         /*对整个主体部分mainpage进行设置*/
-
  #mainpage {
      background-color: #f5f5f5;
      padding-top: 20px;
  }
-
-         /*mainpage中的第一个sec设置*/
-         /*第一个section中的第一个div设置*/
  #mainpagefirstsec{
        height: 659px;
  }
@@ -910,446 +293,6 @@
      height: 330px;
      margin: 0 auto;
  }
-
- #firsecfirdiv {
-     float: left;
-     position: relative;
-     width: 750px;
-     margin-right: 8px;
- }
-
- #animationpic {
-     width: 750px;
-     height: 330px;
-     overflow: hidden;
- }
-
- #animationpicfirdiv {
-     width: 4200px;
-     animation-name: picchange;
-     animation-duration: 20s;
-     animation-iteration-count: infinite;
-     animation-direction: normal;
-     animation-timing-function: step-start;
- }
-
- #animationpic>div>a:not(#firstpic) {
-     margin-left: -6px;
- }
-
- @-webkit-keyframes picchange {
-     20% {
-         transform: translate(0);
-     }
-
-     40% {
-         transform: translate(-750px);
-     }
-
-     60% {
-         transform: translate(-1500px);
-     }
-
-     80% {
-         transform: translate(-2250px);
-     }
-
-     100% {
-         transform: translate(-3000px);
-     }
- }
-
- #animationpicsecdiv {
-     display: none;
-     width: 50px;
-     height: 80px;
-     background-color: rgba(158, 158, 158, 0.41);
-     cursor: pointer;
-     position: absolute;
-     top: 50%;
-     left: 0;
-     margin-top: -40px;
- }
-
- #secdivfirlab {
-     display: block;
-     width: 15px;
-     height: 15px;
-     border-left: 2px solid #ffffff;
-     border-top: 2px solid #ffffff;
-     position: relative;
-     left: 17px;
-     top: 30px;
-     transform: rotate(-45deg);
-     cursor: pointer;
- }
-
- #animationpicthirddiv {
-     display: none;
-     width: 50px;
-     height: 80px;
-     background-color: rgba(158, 158, 158, 0.41);
-     cursor: pointer;
-     position: absolute;
-     top: 50%;
-     right: 0;
-     margin-top: -40px;
- }
-
- #thirddivfirlab {
-     display: block;
-     width: 15px;
-     height: 15px;
-     border-left: 2px solid #ffffff;
-     border-top: 2px solid #ffffff;
-     position: relative;
-     left: 17px;
-     top: 30px;
-     transform: rotate(145deg);
-     cursor: pointer;
- }
-
- #animationpicfourthdiv {
-     position: absolute;
-     bottom: 36px;
-     left: 0;
-     text-align: center;
-     cursor: pointer;
-     width: 100%;
- }
-
- #animationpicfirdiv:hover {
-     animation-play-state: paused;
- }
-
- #firsecfirdiv:hover #animationpicsecdiv {
-     display: block;
- }
-
- #firsecfirdiv:hover #animationpicthirddiv {
-     display: block;
- }
-
- #animationpicsecdiv:hover {
-     background-color: rgba(158, 158, 158, 0.85)
- }
-
- #animationpicthirddiv:hover {
-     background-color: rgba(158, 158, 158, 0.85)
- }
-
- .anipicfourthdivspan {
-     display: inline-block;
-     width: 8px;
-     height: 8px;
-     background-color: #ffffff;
- }
-         /*第一个section中的第一个div设置 结束*/
-
-
- #fourthdivfirspan {
-     animation-name: colorchange1;
-     animation-iteration-count: infinite;
-     animation-timing-function: step-start;
-     animation-duration: 20s;
-             /*animation-delay: 0;*/
- }
-
- #fourthdivsecspan {
-     animation-name: colorchange2;
-     animation-iteration-count: infinite;
-     animation-timing-function: step-start;
-     animation-duration: 20s;
-             /*animation-delay: 5s;*/
- }
-
- #fourthdivthirdspan {
-     animation-name: colorchange3;
-     animation-iteration-count: infinite;
-     animation-timing-function: step-start;
-     animation-duration: 20s;
-             /*animation-delay: 10s;*/
- }
-
- #fourthdivfourthspan {
-     animation-name: colorchange4;
-     animation-iteration-count: infinite;
-     animation-timing-function: step-start;
-     animation-duration: 20s;
-             /*animation-delay: 15s;*/
- }
-
- #fourthdivfifthspan {
-     animation-name: colorchange5;
-     animation-iteration-count: infinite;
-     animation-timing-function: step-start;
-     animation-duration: 20s;
-             /*animation-delay: 20s;*/
- }
-
- #firsecfirdiv:hover .anipicfourthdivspan {
-     animation-play-state: paused;
- }
-
- @-webkit-keyframes colorchange1 {
-     0% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     20% {
-         width: 8px;
-         height: 16px;
-         background-color: #35b558;
-     }
-
-     40% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     60% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     80% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     100% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
- }
-
- @-webkit-keyframes colorchange2 {
-     0% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     20% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     40% {
-         width: 8px;
-         height: 16px;
-         background-color: #35b558;
-     }
-
-     60% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     80% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     100% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
- }
-
- @-webkit-keyframes colorchange3 {
-     0% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     20% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     40% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     60% {
-         width: 8px;
-         height: 16px;
-         background-color: #35b558;
-     }
-
-     80% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     100% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
- }
-
- @-webkit-keyframes colorchange4 {
-     0% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     20% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     40% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     60% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     80% {
-         width: 8px;
-         height: 16px;
-         background-color: #35b558;
-     }
-
-     100% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
- }
-
- @-webkit-keyframes colorchange5 {
-     0% {
-         width: 8px;
-         height: 8px;
-         display: inline-block;
-         background-color: #ffffff;
-     }
-
-     20% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     40% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     60% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     80% {
-         width: 8px;
-         height: 8px;
-         background-color: #ffffff;
-     }
-
-     100% {
-         width: 8px;
-         height: 16px;
-         background-color: #35b558;
-     }
- }
-         /*第一个section中的第二个div设置*/
- #firsecseconddiv {
-     float: left;
-     width: 240px;
-     height: 160px;
-     background-color: #ffffff;
-     border: 1px solid #e9e9e9;
-     padding: 26px 29px 24px 29px;
-     box-sizing: border-box;
-     position: relative;
- }
-
- #firsecseconddiv>a>img {
-     width: 57px;
-     height: 57px;
- }
-
- #firsecseconddiv>span {
-     position: absolute;
-     font-size: 12px;
-     color: #555;
-     margin-top: 8px;
-     margin-left: 15px;
- }
-
- #firsecseconddiv>p {
-     position: absolute;
-     font-size: 12px;
-     color: #555;
-     margin-top: -22px;
-     margin-left: 72px;
- }
-
- #firsecseconddiv>.firsecseconddivlink {
-     display: inline-block;
-     font-size: 14px;
-     width: 85px;
-     height: 32px;
-     border: 1px solid #35b558;
-     color: #35b558;
-     background-color: #ffffff;
-     text-decoration: none;
-     line-height: 32px;
-     text-align: center;
-     position: absolute;
- }
-
- #firsecseconddiv>.firsecseconddivlink:hover {
-     color: #ffffff;
-     background-color: #35b558;
- }
-
- #loginlink {
-     left: 29px;
-     top: 103px;
- }
-
- #freerigisterlink {
-     left: 124px;
-     top: 103px;
- }
-          /*第一个section中的第二个div设置 结束*/
-          /*第一个section中的第三个div设置*/
- #firsecthirddiv {
-     float: left;
-     margin-top: 10px;
- }
-           /*第一个section中的第三个div设置 结束*/
-           /*mainpage中的第二个sec设置*/
  #mainpagesecondsec {
      height: 130px;
      margin-top: 20px;
@@ -1381,28 +324,10 @@
      margin-top: 2px;
      color: #555;
  }
-
- #secondseclink1:hover #secondsecp1 {
-     color: rgb(53,181,88);
- }
-
- #secondseclink2:hover #secondsecp2 {
-     color: rgb(53,181,88);
- }
-
- #secondseclink3:hover #secondsecp3 {
-     color: rgb(53,181,88);
- }
-
- #secondseclink4:hover #secondsecp4 {
-     color: rgb(53,181,88);
- }
-
  #secondseclink1 {
      position: relative;
      overflow: hidden;
  }
-
  #secondseclink1::after {
      content: "最新职位";
      position: absolute;
@@ -1414,374 +339,33 @@
      top: 10px;
      left: -28px;
  }
-           /*mainpage中的第二个sec设置 结束*/
-           /*mainpage中的第三个sec设置*/
  #mainpagethirdsec {
-     margin-top: 20px;
-     margin-bottom: 40px;
-     height: 270px;
- }
-
- #mainpagethirdsec>div {
-     width: 1000px;
-     height: 270px;
-     margin: 0 auto;
- }
-
- #mainpagethirdsec>div>a {
-     width: 233px;
-     height: 100%;
-     border: 1px solid #e9e9e9;
-     background-color: #ffffff;
-     display: inline-block;
-     float: left;
-     text-decoration: none;
- }
-
- #mainpagethirdsec>div>a>img {
-     width: 233px;
-     height: 155px;
- }
-
- #mainpagethirdsec>div>a:nth-child(1) {
-     margin-right: 20px;
- }
-
- #mainpagethirdsec>div>a:nth-child(2) {
-     margin-right: 20px;
- }
-
- #mainpagethirdsec>div>a:nth-child(3) {
-     margin-right: 20px;
- }
-
- #mainpagethirdsec>div>a:nth-child(4) {
-     margin-right: 0;
- }
-
- #mainpagethirdsec>div>a>.tdsecfirp {
-     font-size: 12px;
-     color: #555;
-     line-height: 18px;
-     height: 36px;
-     margin-left: 14px;
-     margin-top: 14px;
- }
-
- #mainpagethirdsec>div>a>.tdsecsecp {
-     font-size: 12px;
-     color: #999;
-     line-height: 16px;
-     height: 16px;
-     margin-left: 14px;
-     margin-top: 6px;
- }
-
- #mainpagethirdsec>div>a>.tdsecthirdp {
-     margin-left: 14px;
-     margin-top: 7px;
- }
-
- #mainpagethirdsec>div>a>.tdsecthirdp>.tdsecthirdpfirspan {
-     font-size: 18px;
-     color: #ff5c00;
-     margin-right: 5px;
- }
-
- #mainpagethirdsec>div>a>.tdsecthirdp>.tdsecthirdpfirspan::before {
-     content: "¥";
-     font-size: 14px;
- }
-
- #mainpagethirdsec>div>a>.tdsecthirdp>.tdsecthirdpsecspan {
-     font-size: 12px;
-     color: #999;
-     text-decoration: line-through;
-     margin-top: 14px;
- }
-
- #mainpagethirdsec>div>a>.tdsecthirdp>.tdsecthirdpthirdspan {
-     font-size: 12px;
-     color: #999;
- }
-
- #mainpagethirdsec>div>a:hover {
-     box-shadow: 0 2px 6px #ccc;
- }
-           /*mainpage中的第三个sec设置 结束*/
-           /*mainpage中的第四个sec设置*/
- #mainpagefourthsec {
-     margin-top: 40px;
-     width: 100%;
-     height: 310px;
- }
-
- #mainpagefourthsec>div {
-     width: 1000px;
-     height: 310px;
-     margin: 0 auto;
- }
-
- #mainpagefourthsec>div>p {
-     font-style: 18px;
-     color: #555;
-     line-height: 18px;
-     height: 18px;
-     margin-bottom: 22px;
- }
-
- #mainpagefourthsec>div>a {
-     text-decoration: none;
-     float: left;
-     color: #ffffff;
-     position: relative;
- }
-
- #fhsecfirimg {
-     width: 500px;
-     height: 270px;
- }
-
- #mainpagefourthsec>div>a>.fhsecsameimg {
-     width: 240px;
-     height: 130px;
- }
-
- #mainpagefourthsec>div>a>span {
-     position: absolute;
-     text-align: center;
-     top: 0;
-     left: 0;
- }
-
- #fhsecfirspan {
-     background: url(http://s1.jikexueyuan.com/index/images/cweb_2d70d0b.png) no-repeat;
-     font-size: 20px;
-     background-size: 55px 84px;
-     width: 500px;
-     height: 270px;
-     line-height: 394px;
-     background-position: 227px 75px;
- }
-
- #fhsecsecspan {
-     background: url(http://s1.jikexueyuan.com/index/images/cpython_5ed9df4.png) no-repeat;
-     font-size: 14px;
-     background-size: 36px 36px;
-     width: 240px;
-     height: 130px;
-     line-height: 198px;
-     background-position: 99px 30px;
- }
-
- #fhsecthirdspan {
-     background: url(http://s1.jikexueyuan.com/index/images/cgo_e66208d.png) no-repeat;
-     font-size: 14px;
-     background-size: 36px 29px;
-     width: 240px;
-     height: 130px;
-     line-height: 198px;
-     background-position: 99px 30px;
- }
-
- #fhsecfourthspan {
-     background: url(http://s1.jikexueyuan.com/index/images/cios_dc0ca8e.png) no-repeat;
-     font-size: 14px;
-     background-size: 36px 36px;
-     width: 240px;
-     height: 130px;
-     line-height: 198px;
-     background-position: 99px 30px;
- }
-
- #fhsecfifthspan {
-     background: url(http://s1.jikexueyuan.com/index/images/cmore_1bdb357.png) no-repeat;
-     font-size: 14px;
-     background-size: 36px 36px;
-     width: 240px;
-     height: 130px;
-     line-height: 198px;
-     background-position: 99px 30px;
- }
-
- #mainpagefourthsec>div>a:not(#fhsecfirlink) {
-     margin-bottom: 7px;
-     margin-left: 10px;
- }
-           /*增加鼠标悬停后的效果，使用i标签背景的透明度的变化*/
- #mainpagefourthsec>div>a>i {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 98.5%;
-     background: #000;
-     opacity: 0.2;
-     transition: opacity .8s;
- }
-
- #mainpagefourthsec>div>a:hover i {
-     opacity: 0.4;
- }
-           /*mainpage中的第四个sec设置 结束*/
-           /*mainpage中的第五个sec设置 */
- #mainpagefifthsec {
-     margin-top: 40px;
-     height: 420px;
- }
-
- #mainpagefifthsec>div {
-     width: 1000px;
-     height: 100%;
-     margin: 0 auto;
-     position: relative;
- }
-
- #mainpagefifthsec>div>div {
-     position: relative;
-     width: 1000px;
-     height: 310px;
- }
-
- #mainpagefifthsec>div>div>a {
-     float: left;
-     width: 156px;
-     height: 148px;
-     background-color: #ffffff;
-     text-decoration: none;
-     border: 1px solid #e9e9e9;
-     text-align: center;
-     transition: box-shadow .5s;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(1) {
-     margin-right: 10px;
-     margin-bottom: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(2) {
-     margin-right: 10px;
-     margin-bottom: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(3) {
-     margin-right: 10px;
-     margin-bottom: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(4) {
-     margin-right: 10px;
-     margin-bottom: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(5) {
-     margin-right: 10px;
-     margin-bottom: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(6) {
-     margin-bottom: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(7) {
-     margin-right: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(8) {
-     margin-right: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(9) {
-     margin-right: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(10) {
-     margin-right: 10px;
- }
-
- #mainpagefifthsec>div>div>a:nth-child(11) {
-     margin-right: 10px;
- }
-
- #mainpagefifthsec>div>div>a>img {
-     width: 55px;
-     height: 55px;
-     margin-top: 25px;
- }
-
- #mainpagefifthsec>div>div>a>p {
-     font-size: 12px;
-     color: #555;
-     line-height: 22px;
-     height: 22px;
- }
-
- #mainpagefifthsec>div>div>a>span {
-     font-size: 12px;
-     color: #35b558;
-     line-height: 22px;
-     height: 22px;
- }
-
- #mainpagefifthsec>div>p {
-     font-size: 18px;
-     color: #555;
-     margin-bottom: 22px;
- }
-
- #fifseclastlink {
-     text-decoration: none;
-     display: block;
-     position: absolute;
-     top: 390px;
-     left: 438px;
-     height: 32px;
-     border: 1px solid #35b558;
-     color: #35b558;
-     width: 120px;
-     font-size: 14px;
-     text-align: center;
-     line-height: 32px;
- }
-
- #mainpagefifthsec>div>div>a:hover {
-     box-shadow: 0 2px 6px #ccc;
-     border: 1px solid #e1e2e1;
- }
-
- #fifseclastlink:hover {
-     background-color: #35b558;
-     color: #fff;
- }
-           /*mainpage中的第五个sec设置 结束*/
-           /*mainpage中的第六个sec设置*/
- #mainpagesixthsec {
      margin-top: 40px;
      height: 360px;
      margin-bottom: 25px;
  }
 
- #mainpagesixthsec>div {
+ #mainpagethirdsec>div {
      width: 1000px;
      margin: 0 auto;
      height: 100%;
  }
 
- #mainpagesixthsec>div>p {
+ #mainpagethirdsec>div>p {
      margin-bottom: 22px;
      font-size: 18px;
      color: #555;
  }
 
- #mainpagesixthsec>div>div {
+ #mainpagethirdsec>div>div {
      overflow: hidden;
  }
 
- #mainpagesixthsec>div>div>div {
+ #mainpagethirdsec>div>div>div {
      width: 3000px;
  }
 
- #mainpagesixthsec>div>div>div>a {
+ #mainpagethirdsec>div>div>div>a {
      text-decoration: none;
      width: 314px;
      height: 250px;
@@ -1789,7 +373,7 @@
      margin-right: 20px;
  }
 
- #mainpagesixthsec>div>div>div>a>p {
+ #mainpagethirdsec>div>div>div>a>p {
      background-color: #fff;
      width: 271px;
      height: 80px;
@@ -1800,42 +384,42 @@
      position: relative;
  }
 
- #mainpagesixthsec>div>div>div>a>p::before {
+ #mainpagethirdsec>div>div>div>a>p::before {
      content: "";
      width: 14px;
      height: 10px;
      position: absolute;
-     background-image: url(http://s1.jikexueyuan.com/index/images/storyicon_4a5e270.png);
+     background-image: image-url("storyicon1.png");
      background-size: 14px 10px;
      top: 7px;
      left: 8px;
  }
 
- #mainpagesixthsec>div>div>div>a>p::after {
+ #mainpagethirdsec>div>div>div>a>p::after {
      content: "";
      position: absolute;
      width: 14px;
      height: 10px;
-     background-image: url(http://s1.jikexueyuan.com/index/images/storyicon_4a5e270.png);
+     background-image: image-url("storyicon1.png");
      background-size: 14px 10px;
-     left: 298px;
-     top: 90px;
+     left: 248px;
+     top: 62px;
      transform: rotate(180deg);
  }
 
- #mainpagesixthsec>div>div>div>a>div {
+ #mainpagethirdsec>div>div>div>a>div {
      margin-left: 20px;
      margin-top: 28px;
      position: relative;
  }
 
- #mainpagesixthsec>div>div>div>a>div>img {
+ #mainpagethirdsec>div>div>div>a>div>img {
      width: 60px;
      height: 60px;
      border-radius: 50%;
  }
 
- #mainpagesixthsec>div>div>div>a>div>p {
+ #mainpagethirdsec>div>div>div>a>div>p {
      font-size: 12px;
      color: #555;
      position: absolute;
@@ -1843,7 +427,7 @@
      left: 74px;
  }
 
- #mainpagesixthsec>div>div>div>a>div>span {
+ #mainpagethirdsec>div>div>div>a>div>span {
      position: absolute;
      font-size: 12px;
      color: #999;
@@ -1851,14 +435,14 @@
      left: 74px;
  }
 
- #mainpagesixthsec>div>div>div {
+ #mainpagethirdsec>div>div>div {
      animation-name: story;
      animation-duration: 16s;
      animation-iteration-count: infinite;
      animation-timing-function: step-start;
  }
 
- #mainpagesixthsec>div>div>div:hover {
+ #mainpagethirdsec>div>div>div:hover {
      animation-play-state: paused;
  }
 
@@ -1872,7 +456,7 @@
      }
  }
 
- #sixthsecfiri {
+ #thirdsecfiri {
      display: inline-block;
      cursor: pointer;
      animation: story-pagination1 16s step-start infinite;
@@ -1892,7 +476,7 @@
      }
  }
 
- #sixthsecseci {
+ #thirdsecseci {
      display: inline-block;
      cursor: pointer;
      animation: story-pagination2 16s step-start infinite;
@@ -1911,249 +495,13 @@
          background-color: #bbb;
      }
  }
-
- #sixthsecsecdiv {
+ #thirdsecsecdiv {
      height: 80px;
      text-align: center;
  }
-
- #sixthsecfiri:hover {
+ #thirdsecfiri:hover {
      animation-play-state: paused;
  }
-
- #sixthsecseci:hover {
+ #thirdsecseci:hover {
      animation-play-state: paused;
  }
-           /*mainpage中的第六个sec设置 结束*/
-           /*设置footer部分*/
- footer {
-     width: 100%;
-     background-color: #ffffff;
- }
-
- footer>#footerfirstdiv {
-     width: 1000px;
-     height: 204px;
-     margin: 0 auto;
- }
-
- #footerfirstdiv>div,ul {
-     float: left;
- }
-
- #footerfirstdiv>#firstdivfirstdiv>img {
-     width: 109px;
-     height: 40px;
- }
-
- #footerfirstdiv>#firstdivfirstdiv>p {
-     font-size: 12px;
-     color: #999;
-     margin-top: 20px;
- }
-
- #footerfirstdiv>ul {
-     list-style: none;
-     display: flex;
-     flex-direction: row;
-     margin-left: 50px;
- }
-
- #footerfirstdiv>ul>li {
-     color: #808080;
-     font-size: 14px;
-     width: 135px;
- }
-
- #footerfirstdiv>ul>li>p {
-     margin-bottom: 10px;
- }
-
- #footerfirstdiv>ul>li>ol {
-     list-style: none;
- }
-
- #footerfirstdiv>ul>li>ol>li {
-     height: 30px;
-     line-height: 30px;
- }
-
- #footerfirstdiv>ul>li>ol>li>a {
-     color: #999999;
-     font-size: 12px;
-     text-decoration: none;
- }
-
- #footerfirstdiv>ul>li>ol>li>a:hover {
-     color: rgb(53,181,88);
- }
-
- #firstdivsecdiv {
-     margin-left: 56px;
- }
-
- #firstdivsecdiv>div {
-     position: relative;
-     width: 140px;
-     height: 30px;
-     line-height: 30px;
-     border: 1px solid #eeeeee;
-     font-size: 13px;
-     color: #808080;
-     position: relative;
-     cursor: pointer;
- }
-
- #firstdivsecdiv>div>.qrcode {
-     position: absolute;
-     width: 115px;
-     height: 153px;
-     display: none;
-     top: -154px;
-     left: 12px;
- }
-
- #firstdivsecdiv>div>.secdivpic {
-     width: 30px;
-     height: 30px;
- }
-
- #firstdivsecdiv>p {
-     font-size: 14px;
-     color: #808080;
-     margin-bottom: 20px;
- }
-
- #firstdivsecdiv>div>p {
-     position: absolute;
-     display: inline-block;
-     left: 40px;
- }
-
- #iphonediv {
-     margin-bottom: 10px;
- }
-
- #iphonediv:hover #qrcodeiphone {
-     display: block;
- }
-
- #androiddiv:hover #qrcodeandroid {
-     display: block;
- }
-
- #footersecdiv {
-     width: 1000px;
-     margin: 0 auto;
-     position: relative;
- }
-
- #footersecdiv>label {
-     margin-left: 124px;
-     font-size: 12px;
-     color: #999;
- }
-
- #footersecdiv>label>a {
-     color: #999;
-     text-decoration: none;
- }
-
- #footersecdiv>label>a:hover {
-     color: rgb(53,181,88);
- }
-
- #footerfirstlink {
-     background-image: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-wechat.png);
-     width: 20px;
-     height: 15px;
-     background-size: 18px 15px;
-     position: absolute;
-     right: 57px;
- }
-
- #footerseclink {
-     background-image: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-sina.png);
-     width: 20px;
-     height: 15px;
-     background-size: 20px 15px;
-     position: absolute;
-     right: 87px;
- }
-
- #footerthirdlink>img {
-     width: 60px;
-     height: 22px;
- }
-
- #footerthirdlink {
-     position: absolute;
-     top: 35px;
-     margin-bottom: 15px;
-     left: 468px;
- }
-           /*设置footer部分 结束*/
-           /*设置gotop部分*/
- #gotop {
-     position: fixed;
-     cursor: pointer;
-     bottom: 90px;
-     left: 50%;
-     margin-left: 510px;
-     width: 34px;
- }
-
- #gotopfirlink {
-     background: url(http://e.jikexueyuan.com/headerandfooter/images/gotop.jpg) 0 0 no-repeat;
-     background-size: 34px 103px;
-     width: 34px;
-     height: 34px;
-     position: absolute;
-     top: -68px;
- }
-
- #gotopseclink {
-     background: url(http://e.jikexueyuan.com/headerandfooter/images/phone-1.png) 0 0 no-repeat;
-     background-size: 13px 25px;
-     width: 34px;
-     height: 34px;
-     border-bottom: 1px solid #999;
-     position: absolute;
-     top: -34px;
-     background-position: 12px;
-     cursor: pointer;
- }
-
- #gotopthirdlink {
-     background: url(http://e.jikexueyuan.com/headerandfooter/images/icon-down-wechat.png) 0 0 no-repeat;
-     background-size: 28px 29px;
-     width: 34px;
-     height: 34px;
-     position: absolute;
-     top: 0px;
-     background-position: 5px;
- }
-
- #gotopimg {
-     width: 120px;
-     height: 156px;
-     position: absolute;
-     top: -70px;
-     left: -119px;
-     display: none;
- }
-
- #gotopfirlink:hover {
-     background: url(http://e.jikexueyuan.com/headerandfooter/images/gotop2.jpg) 0 -34px no-repeat;
-     background-size: 34px 103px;
-     width: 34px;
-     height: 34px;
-     position: absolute;
-     top: -68px;
-     background-position: 0px 0px;
- }
-
- #gotopseclink:hover #gotopimg {
-     display: block;
- }
-           /*设置gotop部分 结束*/
