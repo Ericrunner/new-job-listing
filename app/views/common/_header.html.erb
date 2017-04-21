@@ -1,0 +1,19 @@
+<header>
+ <div class="container1">
+  <div>
+   <%= link_to("所有职位",jobs_path,id:"link-shouye")%>
+  </div>
+  <div class="navcontent">
+   <%= link_to("前端开发",jobs_path(:order => "frontend"),id:"span1")%>
+  </div>
+  <div class="navcontent" id="backend_develop">
+   <%= link_to("后端开发",jobs_path(:order => "backend"),id:"span2")%>
+  </div>
+  <div class="navcontent" id="fullstack">
+   <%= link_to("全栈开发",jobs_path(:order => "fullstack"), id:"span3")%>
+  </div>
+  <div id="sousuo">
+   <img src="images/search-icon.png" />
+  </div>
+ </div>
+</header>

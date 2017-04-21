@@ -3,7 +3,8 @@
   <%= f.input :description,label: "职位要求"%>
   <%= f.input :wage_upper_bound,label:"薪资上限"%>
   <%= f.input :wage_down_bound,label:"薪资下限"%>
+  <%= f.input :job_sorting, :label => "工作类型",collection: ["前端开发","后端开发","全栈开发"]%>
   <%= f.input :contact_email,label:"联系方式"%>
   <%= f.input :is_hidden, as: :boolean,checked_value: true,unchecked_value: false %>
-  <%= f.submit '提交'%>
+  <%= f.submit '提交',disable_with: "提交中...",class: "btn btn-success"%>
 <% end%>

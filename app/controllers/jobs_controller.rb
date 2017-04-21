@@ -6,6 +6,12 @@ def index
          Job.where(is_hidden:false).order("wage_upper_bound DESC")
        when "by_lower_bound"
          Job.where(is_hidden:false).order("wage_down_bound DESC")
+       when "frontend"
+         Job.where(job_sorting:"前端开发")
+       when "backend"
+         Job.where(job_sorting:"后端开发")
+       when "fullstack"
+         Job.where(job_sorting:"全栈开发")
        else
          Job.where(is_hidden:false).order("created_at DESC")
        end

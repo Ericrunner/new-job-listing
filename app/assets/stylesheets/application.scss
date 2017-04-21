@@ -189,22 +189,22 @@
   top: 20px;
   left: 800px;
 }
-article>header {
+header {
      height: 60px;
      background: #fff;
      border-bottom: 1px solid #ececec;
  }
- article>header>.container1 {
+header>.container1 {
      width: 1000px;
      height: 60px;
      margin: 0 auto;
  }
- article>header>.container1>div {
+ header>.container1>div {
      float: left;
      height: 60px;
      line-height: 60px;
  }
- article>header>.container1>div>a>img {
+ header>.container1>div>a>img {
      width: 109px;
      height: 40px;
      margin-top: 10px;
@@ -218,22 +218,18 @@ article>header {
      font-size: 14px;
      margin-right: 50px;
  }
- article>header>.container1>.navcontent {
+ header>.container1>.navcontent {
      position: relative;
      font-size: 14px;
      cursor: pointer;
  }
 
- #course {
+ #backend_develop {
      margin-left: 50px;
  }
 
- #community {
+ #fullstack {
      margin-left: 50px;
- }
-
- #zhiyexueyuan>.xueyuan1>a:hover {
-     color: rgb(53, 181, 88);
  }
 .carousel-caption{
   position: absolute;
@@ -241,39 +237,33 @@ article>header {
   font-size: 40px;
   color:#8BC34A;
 }
- #zhiyexueyuan>.xueyuan1>a {
-     text-decoration: none;
-     line-height: 30px;
-     height: 30px;
-     color: #666;
- }
- article>header>.container1>.navcontent>div {
+header>.container1>.navcontent>div {
      display: inline-block;
      margin-left: 5px;
      color: #c1c1c1;
      transform: rotate(90deg);
  }
 
- article>header>.container1>.navcontent:hover #span1 {
+ header>.container1>.navcontent:hover #span1 {
      color: rgb(53, 181, 88);
  }
 
- article>header>.container1>.navcontent:hover #span2 {
+ header>.container1>.navcontent:hover #span2 {
      color: rgb(53, 181, 88);
  }
 
- article>header>.container1>.navcontent:hover #span3 {
+ header>.container1>.navcontent:hover #span3 {
      color: rgb(53, 181, 88);
  }
 
- article>header>.container1>.navcontent:hover .teshufuhao {
+ header>.container1>.navcontent:hover .teshufuhao {
      color: rgb(53,181,88);
      animation-name: rotate;
      animation-timing-function: ease-out;
      animation-duration: 1s;
      transform: rotate(270deg);
  }
- article>header>.container1>div>img {
+ header>.container1>div>img {
      width: 17px;
      height: 17px;
      cursor: pointer;
