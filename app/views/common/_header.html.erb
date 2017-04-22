@@ -17,7 +17,14 @@
      <div>
        <i></i>
        <i id="lasti"></i>
-       <input type="text" autofocus="autofocus" placeholder="搜索公司，行业，职位">
+       <%= form_tag search_jobs_path, :method => :get  do%>
+          <div class="input-group">
+             <input type="text" class="form-control" name="q" value="<%= params[:q]%>" autofocus="autofocus"
+              placeholder="搜索公司，城市，职位">
+             <button type="submit" class="btn btn-success">搜索</button>
+          </div>
+       <% end %>
+
     </div>
   </div>
 </div>

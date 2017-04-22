@@ -24,12 +24,15 @@
     padding: 0;
     font-family: Verdana,"Lantinghei SC","Hiragino Sans GB","Microsoft Yahei",Helvetica,arial,\5b8b\4f53,sans-serif;
 }
+.container-fluid{
+  padding:0;
+}
 .navbar-default {
-  background-color: #212121;
-  border-color: #212121;
+  background-color: #37474F;
+  border-color: #0077b5;
   margin-bottom: 0;
   .navbar-brand{
-    color:#ef6c00;
+    color:rgba(245, 245, 245, 0.97);
     padding: 10px 15px;
     line-height: 30px;
   }
@@ -48,15 +51,22 @@
   }
 }
  .navbar-default .navbar-nav > li > a{
-   color: #EF6C00;
+   color: #fff;
+   font-size: 15px;
+   font-weight: 500;
 
  }
-
+ .container-fluid .navbar-header{
+   margin-left: 166px;
+ }
+ .navbar-header span{
+   line-height: 50px;
+   color:rgba(245, 245, 245, 0.97);
+   font-size: 18px;
+ }
  .navbar-default .navbar-nav > li > a:hover,
  .navbar-default .navbar-nav > li > a:focus {
    color: #FF6F00;
-
-   background-color: transparent;
  }
  .navbar-default .navbar-nav > .active > a,
  .navbar-default .navbar-nav > .active > a:hover,
@@ -66,14 +76,11 @@
    background-color: #FFE0B2;
 
  }
-
- .navbar-default .navbar-nav > .open > a,
- .navbar-default .navbar-nav > .open > a:focus,
- .navbar-default .navbar-nav > .open > a:hover {
-   background-color: #FFE0B2;
-
-   color: #212121;
-
+ #signup{
+   border:1px #fff;
+ }
+ .navbar-collapse ul{
+   margin-right: 123px;
  }
   .navbar-brand > img {
      display: inline-block; //图片和链接文字显示在同一行
@@ -244,7 +251,7 @@ header>.container1>.navcontent:hover #span1 {
      float: right;
  }
  #mainpage {
-     background-color: #f5f5f5;
+     background-color: #d9edf7;
      padding-top: 20px;
  }
  #mainpagefirstsec{
@@ -588,7 +595,7 @@ header>.container1>.navcontent:hover #span1 {
   }
 }
 /*鼠标点击后出现的动画效果是由上面的代码实现的 end*/
-#searchdiv>div>input{
+#searchdiv>div input{
     float: left;
     display: block;
     width: 400px;
@@ -600,4 +607,7 @@ header>.container1>.navcontent:hover #span1 {
     font-size: 12px;
     outline: none;
     text-indent: 12px;
+}
+#searchdiv>div button{
+  margin-left: 455px;
 }

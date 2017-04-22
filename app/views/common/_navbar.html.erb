@@ -1,13 +1,14 @@
 <nav class="navbar navbar-default" id="nav">
   <div class="container-fluid">
     <div class="navbar-header">
-         <a class="navbar-brand" href="/" ><img src="<%= image_url 'logo.png'%>" alt="">51 Best Offer</a>
+         <a class="navbar-brand" href="/" >51 Best Offer  <img src="<%= image_url 'logo.png'%>" alt=""></a>
+         <span>  Give you the Best</span>
     </div>
     <div class="collapes navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <% if !current_user %>
-        <li><a href="#" data-toggle="modal" data-target="#signup-modal">注册</a></li>
         <li><a href="#" data-toggle="modal" data-target="#login-modal">登入</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#signup-modal">马上加入</a></li>
         <% else %>
           <li>
              <a href="/" class="dropdown" data-toggle="dropdown">
