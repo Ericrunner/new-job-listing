@@ -204,14 +204,6 @@ header>.container1 {
      height: 60px;
      line-height: 60px;
  }
- header>.container1>div>a>img {
-     width: 109px;
-     height: 40px;
-     margin-top: 10px;
-     margin-left: 0;
-     margin-right: 60px;
- }
-         /*第二个div的设置*/
  #link-shouye {
      text-decoration: none;
      color: rgb(53, 181, 88);
@@ -237,14 +229,7 @@ header>.container1 {
   font-size: 40px;
   color:#8BC34A;
 }
-header>.container1>.navcontent>div {
-     display: inline-block;
-     margin-left: 5px;
-     color: #c1c1c1;
-     transform: rotate(90deg);
- }
-
- header>.container1>.navcontent:hover #span1 {
+header>.container1>.navcontent:hover #span1 {
      color: rgb(53, 181, 88);
  }
 
@@ -254,19 +239,6 @@ header>.container1>.navcontent>div {
 
  header>.container1>.navcontent:hover #span3 {
      color: rgb(53, 181, 88);
- }
-
- header>.container1>.navcontent:hover .teshufuhao {
-     color: rgb(53,181,88);
-     animation-name: rotate;
-     animation-timing-function: ease-out;
-     animation-duration: 1s;
-     transform: rotate(270deg);
- }
- header>.container1>div>img {
-     width: 17px;
-     height: 17px;
-     cursor: pointer;
  }
  #sousuo {
      float: right;
@@ -486,12 +458,146 @@ header>.container1>.navcontent>div {
      }
  }
  #thirdsecsecdiv {
-     height: 80px;
-     text-align: center;
+    height: 80px;
+    text-align: center;
  }
  #thirdsecfiri:hover {
-     animation-play-state: paused;
+    animation-play-state: paused;
  }
  #thirdsecseci:hover {
-     animation-play-state: paused;
+    animation-play-state: paused;
  }
+ #headersearchdiv>div>i:nth-child(1){
+		background: image-url("search-icon.png");
+		background-size: 17px 17px;
+    background-position: 0, 0;
+    height: 17px;
+    width: 17px;
+    display: block;
+    float: left;
+    position: absolute;
+		top: 22px;
+ 	}
+ #headersearchdiv>div #lasti{
+      background: image-url("close-icon.png");
+      width: 15px;
+	    height: 15px;
+      cursor: pointer;
+	    background-size: 100% 100%;
+	    display:block;
+	    float: right;
+	    position: absolute;
+	    top: 22px;
+	    right: 0;
+ 		}
+ #headersearchdiv>div{
+		  display: none;
+ 			position: absolute;
+ 			top: 0;
+ 			right: 291px;
+ 			background: #fff;
+ 			height: 60px;
+ 			width: 850px;
+ 		}
+ 		/*鼠标点击后出现的动画效果是由下面的代码实现的*/
+ #headersearchdiv>.scale{
+		  transform-origin: right center;
+	    -moz-transform-origin: right center;
+	    display: block;
+	    /*transform: scale(1, 1);
+	    opacity: 1;*/
+	    animation: scalerun 0.8s ease normal;
+	    -moz-animation: scalerun 2s line normal;
+	    -webkit-animation: scalerun 0.8s ease normal;
+ 		}
+ 		@keyframes scalerun{
+ 			0%{
+                 opacity: 0;
+ 			    transform: scale(0.1, 1);
+ 			}
+ 			100%{
+ 			    opacity: 1;
+ 			    transform: scale(1, 1);
+ 			}
+ 		}
+    #searchdiv{
+      float: right;
+    }
+    .searchicon{
+      height: 60px;
+      width: 17px;
+      display: inline-block;
+      cursor: pointer;
+      background: image-url("search-icon.png") no-repeat;
+      background-position: 0px 22px;
+      background-size: 17px;
+    }
+    .mouseenterbg{
+      background: image-url("search-icon2.png") no-repeat;
+      background-size: 17px 17px;
+      background-position: 0px 22px;
+   }
+#searchdiv>div>i:nth-child(1){
+   background: image-url("search-icon.png");
+   background-size: 17px 17px;
+   background-position: 0, 0;
+   height: 17px;
+   width: 17px;
+   display: block;
+   float: left;
+   position: absolute;
+   top: 22px;
+   left: 8px;
+}
+#searchdiv>div #lasti{
+   background: image-url("close-icon.png");
+   width: 15px;
+   height: 15px;
+   cursor: pointer;
+   background-size: 100% 100%;
+   display:block;
+   float: right;
+   position: absolute;
+   top: 22px;
+   right: 18px;
+}
+#searchdiv>div{
+   display: none;
+   position: absolute;
+   top: 51px;
+   right: 149px;
+   background: rgb(60, 118, 102);
+   height: 60px;
+   width: 560px;
+}
+#searchdiv .scale{
+   transform-origin: right center;
+    -moz-transform-origin: right center;
+    display: block;
+    animation: scalerun 0.8s ease normal;
+    -webkit-animation: scalerun 0.8s ease normal;
+}
+@keyframes scalerun{
+  0%{
+            opacity: 0;
+      transform: scale(0.1, 1);
+  }
+  100%{
+      opacity: 1;
+      transform: scale(1, 1);
+  }
+}
+/*鼠标点击后出现的动画效果是由上面的代码实现的 end*/
+#searchdiv>div>input{
+    float: left;
+    display: block;
+    width: 400px;
+    height: 40px;
+    border: 0;
+    position: absolute;
+    top: 12px;
+    left: 35px;
+    font-size: 12px;
+    outline: none;
+    text-indent: 12px;
+}

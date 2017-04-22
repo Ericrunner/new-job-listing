@@ -15,3 +15,19 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
+$(function(){
+  $("#searchdiv>span").mouseenter(function(){
+      $(this).addClass("mouseenterbg");
+  });
+  $("#searchdiv>span").mouseleave(function(){
+      $(this).removeClass("mouseenterbg");
+  });
+  // 鼠标点击搜索图片后，出现搜索框及其他内容
+  $("#searchdiv>span").click(function(){
+      $("#searchdiv>div").addClass("scale")
+  });
+  // 搜索框出现后，点击其中的一个close图标，搜索框消失
+  $("#searchdiv>div #lasti").click(function(){
+      $("#searchdiv>div").removeClass("scale")
+  });
+})
