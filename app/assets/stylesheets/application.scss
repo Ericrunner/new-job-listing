@@ -35,15 +35,13 @@
     color:rgba(245, 245, 245, 0.97);
     padding: 10px 15px;
     line-height: 30px;
+    img{
+      margin-left: 20px;
+    }
   }
 }
 .navbar-brand:hover {
-  color:#ef6f00;
-  background-color: transparent;
-}
-.navbar-brand:focus {
-  color:#ef6f00;
-  background-color: transparent;
+   color: #FF6F00;
 }
 @media (min-width: 768px){
   .navbar {
@@ -186,7 +184,15 @@
  .login-help{
    font-size: 12px;
  }
-
+.form-actions{
+   display: inline-block;
+ }
+ .form-group:nth-of-type(2){
+   margin-top: 10px;
+   input{
+     height: 34px;
+   }
+ }
 #carousle1{
   left: -340px;
   color: #B0BEC5;
