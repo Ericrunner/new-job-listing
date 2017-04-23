@@ -194,8 +194,10 @@
    }
  }
 #carousle1{
-  left: -340px;
-  color: #B0BEC5;
+  left: 71px;
+  color: #ce9c9b;
+  top: 76px;
+  width: 950px;
 }
 #carousel2{
   width: 10px;
@@ -217,6 +219,10 @@ header>.container1 {
      height: 60px;
      line-height: 60px;
  }
+ #item2 img{
+   height: 666px;
+   width: 1000px;
+ }
  #link-shouye {
      text-decoration: none;
      color: rgb(53, 181, 88);
@@ -232,7 +238,6 @@ header>.container1 {
  #backend_develop {
      margin-left: 50px;
  }
-
  #fullstack {
      margin-left: 50px;
  }
@@ -256,9 +261,14 @@ header>.container1>.navcontent:hover #span1 {
  #sousuo {
      float: right;
  }
- #mainpage {
-     background-color: #d9edf7;
-     padding-top: 20px;
+ article {
+     background: image-url("mainpg1.jpg") no-repeat;
+     background-size: cover;
+ }
+ #mainpage{
+   width: 1027px;
+   background: rgba(245, 245, 245, 0.77);
+   margin: auto;
  }
  #mainpagefirstsec{
        height: 659px;

@@ -16,7 +16,10 @@
       </div>
       <%= render 'common/header'%>
       <%= render 'common/flashes'%>
-      <%= yield %>
+      <div class="container-fluid" id="mainbody">
+          <%= yield %>
+      </div>
+
     </div>
       <%= render 'common/footer'%>
   </body>
